@@ -28,9 +28,9 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome
+  // Font Awesome 5
   gulp.src([
-      './node_modules/@fortawesome/**/*',
+      './node_modules/@fortawesome/**/*'
     ])
     .pipe(gulp.dest('./vendor'))
 
@@ -47,17 +47,16 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
-  // Magnific Popup
+  // Simple Line Icons
   gulp.src([
-      './node_modules/magnific-popup/dist/*'
+      './node_modules/simple-line-icons/fonts/**',
     ])
-    .pipe(gulp.dest('./vendor/magnific-popup'))
+    .pipe(gulp.dest('./vendor/simple-line-icons/fonts'))
 
-  // Scrollreveal
   gulp.src([
-      './node_modules/scrollreveal/dist/*.js'
+      './node_modules/simple-line-icons/css/**',
     ])
-    .pipe(gulp.dest('./vendor/scrollreveal'))
+    .pipe(gulp.dest('./vendor/simple-line-icons/css'))
 
 });
 
