@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "android_app",
+        "package_name": "com.edxavier.cerberus_sms",
+        "sha256_cert_fingerprints": ["00:BA:7F:7B:A8:86:76:F9:FD:8F:FE:92:F9:30:EC:74:DC:82:D2:0D:18:73:0A:82:3E:B1:8C:9A:B2:FF:3E:46"]
+    }
+}]
