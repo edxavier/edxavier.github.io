@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Pagina personal de Eder Xavier Rojas. Ing. en Telemática, desarrollador de aplicaciones android.">
+    <meta name="description" content="Pagina personal de Eder Xavier Rojas. Ing. en Telemática, desarrollador de aplicaciones web y android.">
     <meta name="author" content="Eder Xavier Rojas">
     <meta name="keywords" content="Eder Rojas, Eder, edxavier, edx, rex">
 
@@ -24,29 +24,49 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-     <style type="text/css" media="screen">
-        
-          
-            .bg-app-collage {
-              background: linear-gradient(90deg, #fbc02d 33%, transparent 0%), linear-gradient(90deg, #fdd835 67%, transparent 33%), linear-gradient(90deg, #fbc02d 100%, transparent 67%); }
-          
+    <style type="text/css" media="screen">
+        .bg-grey { background-color: #F9F9FA; }
 
-            .bg-alt {
-              background-color: #fff; }
+      .masthead {
+                min-height: 30rem;
+                position: relative;
+                display: table;
+                width: 100%;
+                height: auto;
+                padding-top: 8rem;
+                padding-bottom: 8rem;
+                background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("./img/2.jpg");
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("./img/2.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #fefefe;
+              }
 
-            .bg-faded {
-              background-color: #EDECEC; }
+              .masthead h1 {
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+              }
 
-            .bg-grey {
-              background-color: #F9F9FA; }
+              @media (min-width: 992px) {
+                .masthead {
+                  height: 100vh;
+                }
+                .masthead h1 {
+                  font-size: 5.5rem;
+                }
+              }
+              .img-team {  width: 130px; height: 130px;}
+              .rounded-circle {border-radius: 50% !important; }
 
-            .bg-primary {
-              background-color: #512DA8 !important; }
+              .bg-purple {
+                background-color: #1976d2;
+              }
 
-            .bg-orange {
-              background-color: #ffb300; }
-    
-        </style>
+
+
+    </style>
 
 
   </head>
@@ -59,19 +79,17 @@
     </a>
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">edxavier</a>
-        </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Inicio</a>
         </li>
        <!-- <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#about">Sobre mi</a>
         </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Servicios</a>
-        </li>
       -->
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Aptitudes</a>
+        </li>
+      
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
@@ -84,11 +102,15 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
+        <img src="img/eder2.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
         <h1 class="mb-1">Eder Xavier Rojas</h1>
-        <h3 class="mb-5">
+        <h3 class="mb-2">
           <em>Ingeniero en Telemática</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Más</a>
+        <h5 class="mb-5">
+          Desarrolador Android
+        </h5>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Más</a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -107,55 +129,52 @@
       </div>
     </section>
 
-    <!-- Services
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <!-- Services  -->
+     <section class="content-section bg-purple text-white text-center" id="services">
       <div class="container">
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
+          <h2 class="mb-5">Aptitudes</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
+              <p><em class="material-icons dp36">android</em></p>
             </span>
             <h4>
-              <strong>Responsive</strong>
+              <strong>Android</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <p class="text-faded mb-0">Programacion de aplicaciones nativas usando SDK android mediante lenguaje JAVA o Kotlin</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
+              <i class="icon-screen-desktop"></i>
             </span>
             <h4>
-              <strong>Redesigned</strong>
+              <strong>Linux</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <p class="text-faded mb-0">Administracion de servidores sobre plataformas basadas en Linux</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
+              <i class="icon-social-github"></i>
             </span>
             <h4>
-              <strong>Favorited</strong>
+              <strong>Github</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fas fa-heart"></i>
-              Start Bootstrap!</p>
+            <p class="text-faded mb-0">Conocimiento y manejo intermedio de github
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
+              <i class="icon-globe"></i>
             </span>
             <h4>
-              <strong>Question</strong>
+              <strong>Web</strong>
             </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
+            <p class="text-faded mb-0">Programacion de aplicaciones web usando framework Django</p>
           </div>
         </div>
       </div>
-    </section>  -->
+    </section> 
 
     <!-- Callout 
     <section class="callout">
@@ -244,21 +263,22 @@
         <section class="bg-grey" id="contact">
             <div class="container">
                 <div class="row d-md-flex  text-center wow fadeIn">
-                    <div class="col-md-4 p-3">
+                    <div class="col-md-4 p-4">
                         <p><em class="material-icons dp36">phone</em></p>
                         <p class="lead">+505 8494 3267</p>
                     </div>
-                    <div class="col-md-4 p-3">
+                    <div class="col-md-4 p-4">
                         <p><em class="material-icons dp36">email</em></p>
                         <p class="lead">edxavier05@gmail.com</p>
                     </div>
-                    <div class="col-md-4 p-3">
+                    <div class="col-md-4 p-4">
                         <p><em class="material-icons dp36">location_on</em></p>
                         <p class="lead">Managua, Nicaragua</p>
                     </div>
                 </div>
             </div>
         </section>
+      
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
